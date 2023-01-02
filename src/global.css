@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("woff2 supports variations"),
+        url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("woff2-variations");
+    font-weight: 100 1000;
+}
+
+body {
+    font-family: Inter;
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+input {
+    color: var(--colors-primaryText);
+    border-radius: 6px;
+    padding-right: 20px;
+    width: 100%;
+    background: var(--colors-surface);
+    padding-left: 24px;
+    letter-spacing: 0px;
+    border: 1px solid transparent;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--colors-primary);
+}
+
+button {
+    border-color: var(--colors-outline2);
+    border: 1px solid var(--colors-outline1);
+    height: 24px;
+
+    background: var(--colors-surface);
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 0 1rem;
+}
+
+button:hover:enabled {
+    background: var(--colors-containerHover);
+    border-color: var(--colors-outline2);
+    border: 1px solid var(--colors-outline1);
+}
+
+.dividerText {
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    color: var(--colors-secondaryText);
+    @apply mt-8 mb-4 uppercase;
+}
+
+.light {
+    --colors-onErrorContainer: #410000;
+    --colors-surfaceVariant: #F9F8F9;
+    --colors-uiSurface: #F4F2F4;
+    --colors-primary: #4E3091;
+    --colors-outline2: #DCDBDD;
+    --colors-outline1: #E4E2E4;
+    --colors-containerHover: #EEEDEF;
+    --colors-containerActive: #E9E8EA;
+    --colors-onWarning: #FFFFFF;
+    --colors-successContainer: #82FAAC;
+    --colors-onPrimaryContainer: #23005C;
+    --colors-onWarningContainer: #321200;
+    --colors-onSuccess: #FFFFFF;
+    --colors-outline3: #C8C7CB;
+    --colors-containerFillHover: #86848D;
+    --colors-onError: #FFFFFF;
+    --colors-onSuccessContainer: #00210E;
+    --colors-warning: #DC6803;
+    --colors-containerFill: #908E96;
+    --colors-onPrimary: #FFFFFF;
+    --colors-success: #039855;
+    --colors-warningContainer: #FFDBC9;
+    --colors-onPrimaryContainer2: #4E309188;
+    --colors-errorContainer: #FFDAD5;
+    --colors-error: #D92D20;
+    --colors-secondaryText: #6F6E77;
+    --colors-surface: #FDFCFD;
+    --colors-primaryContainer: #E9DDFF;
+    --colors-primaryText: #1A1523;
+}
+
+.dark {
+    --colors-onErrorContainer: #FFDAD5;
+    --colors-surfaceVariant: #1C1C1F;
+    --colors-uiSurface: #232326;
+    --colors-primary: #D0BCFF;
+    --colors-outline2: #3E3E44;
+    --colors-outline1: #34343A;
+    --colors-containerHover: #28282C;
+    --colors-containerActive: #2E2E32;
+    --colors-onWarning: #522300;
+    --colors-successContainer: #00522b;
+    --colors-onPrimaryContainer: #E9DDFF;
+    --colors-onWarningContainer: #FFDBC9;
+    --colors-onSuccess: #00391C;
+    --colors-outline3: #504F57;
+    --colors-containerFillHover: #7E7D86;
+    --colors-onError: #690001;
+    --colors-onSuccessContainer: #82FAAC;
+    --colors-warning: #FFB68C;
+    --colors-containerFill: #706F78;
+    --colors-onPrimary: #3A187C;
+    --colors-success: #65DD92;
+    --colors-warningContainer: #753400;
+    --colors-onPrimaryContainer2: #D0BCFF80;
+    --colors-errorContainer: #930002;
+    --colors-error: #FFB4A8;
+    --colors-secondaryText: #A09FA6;
+    --colors-surface: #161618;
+    --colors-primaryContainer: #513394;
+    --colors-primaryText: #EDEDEF;
+}
