@@ -19,7 +19,8 @@ chrome.storage.local.get(null, (data) => {
  * @returns The response from the GPT-3 API
  */
 const _askGpt3 = async (query) => {
-    const gptConfig = await chrome.storage.local.get("gptConfig");
+    const { gptConfig } = await chrome.storage.local.get("gptConfig");
+
     try {
         const response = await openai.createCompletion({
             model: "text-davinci-003",
